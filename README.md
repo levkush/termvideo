@@ -1,3 +1,5 @@
+![Preview](./screenshot.png)
+
 # TermVideo 🎬
 
 ![GitHub](https://img.shields.io/github/license/levkush/termvideo)
