@@ -128,7 +128,7 @@ func createBuffer(video vidio.Video, qualityX, qualityY int) {
 			frame_counter = 0
 		}
 		frame := processFrame(img, qualityX, qualityY)
-		//fmt.Print(frame)
+		fmt.Print(frame)
 		moveCursorUp(strings.Count(frame, "\n"))
 
 		time.Sleep(time.Second / time.Duration(fps+FPS_MODIFIER))
