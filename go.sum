@@ -1,0 +1,6 @@
+github.com/AlexEidt/Vidio v1.5.0 h1:u7fssdoWXJDD0W6jlOH/d1LQbZwelguuwc9kXnJiYI8=
+github.com/AlexEidt/Vidio v1.5.0/go.mod h1:djhIMnWMqPrC3X6nB6ymGX6uWWlgw+VayYGKE1bNwmI=
+github.com/AlexEidt/aio v1.4.3 h1:gakpAJxnzLH8Z8v+JU8ysNr+n1mXRYuYl0V5k+0pzCk=
+github.com/AlexEidt/aio v1.4.3/go.mod h1:Q0di05rZ/loBUmyBYZy52FtI+iRz4Ne1g+0Q0xx7F1g=
+golang.org/x/net v0.17.0 h1:pVaXccu2ozPjCXewfr1S7xza/zcXTity9cCdXQYSjIM=
+golang.org/x/net v0.17.0/go.mod h1:NxSsAGuq816PNPmqtQdLE42eU2Fs7NoRIZrHJAlaCOE=
