@@ -22,8 +22,9 @@ TermVideo is a terminal video player written in Go that will help you play your 
 
 ### Installation
 
-1. Go to the ![Releases](https://github.com/levkush/termvideo/releases) tab
-2. Download the latest release file for your OS
+1. Install ![ffmpeg](https://ffmpeg.org/)
+2. Go to the ![Releases](https://github.com/levkush/termvideo/releases) tab
+3. Download the latest release file for your OS
 
 ### Example Usage
 

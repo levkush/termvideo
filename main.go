@@ -116,6 +116,7 @@ func createBuffer(video vidio.Video, qualityX, qualityY int) {
 					CALIBRATED = true
 					CALIBRATE_TIME = time.Now()
 				}
+				fmt.Println(cycle_time)
 			}
 
 			last_run_time = time.Now()
@@ -128,7 +129,7 @@ func createBuffer(video vidio.Video, qualityX, qualityY int) {
 			frame_counter = 0
 		}
 		frame := processFrame(img, qualityX, qualityY)
-		fmt.Print(frame)
+		//fmt.Print(frame)
 		moveCursorUp(strings.Count(frame, "\n"))
 
 		time.Sleep(time.Second / time.Duration(fps+FPS_MODIFIER))
@@ -141,9 +142,15 @@ func createBuffer(video vidio.Video, qualityX, qualityY int) {
 }
 
 func clearScreen() {
-	cmd := exec.Command("cmd", "/c", "cls")
-	cmd.Stdout = os.Stdout
-	cmd.Run()
+	if runtime.GOOS == "windows" {
+		cmd := exec.Command("cmd", "/c", "cls")
+		cmd.Stdout = os.Stdout
+		cmd.Run()
+	} else {
+		cmd := exec.Command("clear")
+		cmd.Stdout = os.Stdout
+		cmd.Run()
+	}
 }
 
 func main() {
@@ -210,7 +217,12 @@ func main() {
 	qualityX := quality / 2
 	qualityY := quality
 
-	video, _ := vidio.NewVideo(FILE_NAME)
+	video, err := vidio.NewVideo(FILE_NAME)
+
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 
 	createBuffer(*video, qualityX, qualityY)
 
