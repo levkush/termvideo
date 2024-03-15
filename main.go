@@ -116,7 +116,6 @@ func createBuffer(video vidio.Video, qualityX, qualityY int) {
 					CALIBRATED = true
 					CALIBRATE_TIME = time.Now()
 				}
-				fmt.Println(cycle_time)
 			}
 
 			last_run_time = time.Now()
