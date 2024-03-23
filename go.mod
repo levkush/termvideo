@@ -1,4 +1,4 @@
-module levkush/termimage
+module github.com/levkush/termimage
 
 go 1.19
 
