@@ -1,4 +1,4 @@
-module github.com/levkush/termimage
+module github.com/levkush/termvideo
 
 go 1.19
 
